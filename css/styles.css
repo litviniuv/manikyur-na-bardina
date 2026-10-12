@@ -128,3 +128,6 @@ html.rv [data-reveal].is-in{opacity:1;transform:none}
 .facts__note{font-size:14px;color:var(--muted)}
 .brand b{font-weight:600}
 @media (min-width:960px){.contacts__grid{align-items:stretch}.contacts .map{aspect-ratio:auto;height:100%;min-height:420px}}
+html.simple body{min-height:100vh;min-height:100svh;display:flex;flex-direction:column}
+html.simple .simple__main{flex:1 0 auto}
+.reviews>li{display:flex}.reviews .review{flex:1}
