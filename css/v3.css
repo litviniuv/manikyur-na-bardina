@@ -1,0 +1,29 @@
+/* prompt 8: visit board */
+.v3{--bg:#f2e6d6;--card:#f2e6d6;--ink:#2b211b;--muted:#6e5c4e;--line:#dccab4;--accent:#a3502f;--accent-ink:#fff}
+.v3 .section:nth-of-type(even){background:transparent}
+.v3 .header{background:rgba(242,230,214,.92)}
+.v3 h2{font-style:italic}
+.v3 .perks li,.v3 .svc__item,.v3 .review,.v3 .rating a{background:rgba(255,250,242,.6)}
+.spot{position:fixed;left:0;top:0;width:520px;height:520px;margin:-260px 0 0 -260px;border-radius:50%;pointer-events:none;z-index:0;background:radial-gradient(circle,rgba(163,80,47,.16),rgba(163,80,47,0) 65%);transform:translate(50vw,40vh);transition:transform .25s ease-out}
+.v3 main,.v3 .footer{position:relative;z-index:1}
+.h8{padding:32px 0 56px}
+.h8__in{display:grid;gap:28px}
+.h8__brow{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+.h8__h{font-size:clamp(42px,7.5vw,84px);margin-bottom:.15em}
+.h8__note{font:italic 500 clamp(26px,3.6vw,38px)/1.15 var(--serif);color:var(--accent);margin:0 0 18px 1.2em;transform:rotate(-2deg);transform-origin:left}
+.h8__line{color:var(--muted);max-width:480px}
+.h8__photo{margin:0;justify-self:center;width:min(78%,380px);transform:rotate(3deg);transition:transform .3s ease;will-change:transform}
+.h8__photo img{width:100%;aspect-ratio:3/4;object-fit:cover;border:10px solid #fffaf2;box-shadow:0 18px 40px rgba(60,35,20,.18)}
+.h8__facts{display:grid;gap:0;border-top:1px solid var(--line)}
+.h8__facts li{padding:14px 0;border-bottom:1px solid var(--line);font:500 22px/1.2 var(--serif)}
+@media (min-width:860px){
+ .h8{padding:64px 0 80px}
+ .h8__in{grid-template-columns:1.3fr 1fr;align-items:center;column-gap:56px}
+ .h8__facts{grid-column:1/-1;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--line)}
+ .h8__facts li{border-bottom:0;padding:18px 24px}
+ .h8__facts li+li{border-left:1px solid var(--line)}
+}
+.v3 .tile:nth-child(odd) img{transform:rotate(-1.5deg)}
+.v3 .tile:nth-child(even) img{transform:rotate(1.5deg)}
+.v3 .tile img{border:8px solid #fffaf2;border-radius:2px;box-shadow:0 10px 24px rgba(60,35,20,.14)}
+.v3 .svc__item--cta{background:var(--ink);border-color:var(--ink)}
